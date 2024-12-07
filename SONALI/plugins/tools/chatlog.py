@@ -1,14 +1,20 @@
 import random
-from pyrogram import Client, filters
-from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
+import random
+from pyrogram import Client
+from pyrogram.types import Message
+from pyrogram import filters
+from pyrogram.types import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    InputMediaPhoto,
+    InputMediaVideo,
+    Message,
+)
 from config import LOGGER_ID as LOG_GROUP_ID
-from SONALI import app 
-from pyrogram.errors import RPCError
-from typing import Union, Optional
-from PIL import Image, ImageDraw, ImageFont
-import asyncio, os, aiohttp
-from pathlib import Path
-from pyrogram.enums import ParseMode
+from SONALI import app
+from SONALI.core.userbot import Userbot
+from SONALI.utils.database import delete_served_chat
+from SONALI.utils.database import get_assistant
 
 photo = [
     "https://te.legra.ph/file/758a5cf4598f061f25963.jpg",
