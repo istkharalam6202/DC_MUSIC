@@ -40,25 +40,25 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
     if 0 < umm <= 10:
-        bar = "𝐌—————————"
+        bar = "😇—————————"
     elif 10 < umm < 20:
-        bar = "—𝐔————————"
+        bar = "—🎉————————"
     elif 20 <= umm < 30:
-        bar = "——𝐒———————"
+        bar = "——🥰———————"
     elif 30 <= umm < 40:
-        bar = "———𝐀——————"
+        bar = "———🥰——————"
     elif 40 <= umm < 50:
-        bar = "————𝐑—————"
+        bar = "————🤪—————"
     elif 50 <= umm < 60:
-        bar = "—————🅡————"
+        bar = "—————🥳————"
     elif 60 <= umm < 70:
-        bar = "——————𝐀———"
+        bar = "——————🥴———"
     elif 70 <= umm < 80:
-        bar = "———————𝐓——"
+        bar = "———————🤪——"
     elif 80 <= umm < 95:
-        bar = "𝐌𝐔𝐒𝐀𝐑𝐑𝐀𝐓"
+        bar = "TEAMPURVI"
     else:
-        bar = "—𝐈𝐒𝐓𝐊𝐇𝐀𝐑——♡"
+        bar = "—🇧 ᴀʙᴜʟ ♧︎︎︎——♡"
 
     buttons = [
         [
@@ -76,10 +76,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
       [
             InlineKeyboardButton(
-                text="❄️ ❍ᴡɴᴇꝛ ❄️", url="https://t.me/PURVI_SUPPORT",
+                text="❄️ ❍ᴡɴᴇꝛ ❄️", url="https://t.me/mr_babul0",
             ),
             InlineKeyboardButton(
-                text="🍬 sᴜᴘᴘᴏꝛᴛ 🍬", url="https://t.me/CRAZY_OP_02",
+                text="🍬 sᴜᴘᴘᴏꝛᴛ 🍬", url="https://t.me/+buVXCEkFdfBlYTk9",
             )
         ],
          [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
